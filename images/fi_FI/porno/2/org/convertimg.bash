@@ -1,7 +1,10 @@
 #!/bin/bash
 	rm ../*.jpg
 	cp *.jpg ../
-	mogrify -resize 750x500 ../*.jpg
+	mogrify -resize x500 ../*.jpg
+	#mogrify -thumbnail  750x500 ../*.jpg
+	#mogrify -size  750x500 ../*.jpg
+
         for i in $( ls ../*.jpg ); do
             echo item: $i
 		
